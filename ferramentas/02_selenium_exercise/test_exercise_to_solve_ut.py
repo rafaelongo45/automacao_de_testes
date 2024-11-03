@@ -13,6 +13,7 @@ class TestStringMethods(unittest.TestCase):
         options = ChromeOptions()
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")
+        
         driver = webdriver.Chrome(options=options)
 
         driver.get(f"file:////{file_path}/sample-exercise_.html")
